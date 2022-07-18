@@ -144,7 +144,12 @@ img {
 
   color: #757575;
 }
-
+.header-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 /**
 |===============================
 |Hero section
@@ -226,6 +231,16 @@ img {
   width: 270px;
 }
 
+.features-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+}
+
 .second-title {
   color: var(--main-txt-cl);
   font-weight: 700;
@@ -235,6 +250,7 @@ img {
   letter-spacing: 0.03em;
 }
 .section-subtitle {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--main-txt-cl);
@@ -317,6 +333,46 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+/**
+|===============================
+|Clients section
+|===============================
+*/
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 60px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:hover {
+  background-color: var(--link-txt-cl);
+}
+
+.clients-link:hover .clients-icon {
+  fill: #ffffff;
+}
+
 /**
 |===============================
 |Footer
@@ -328,6 +384,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-section {
+  display: flex;
+}
+
 .logo-footer {
   margin-right: 0;
 }
@@ -362,6 +422,77 @@ img {
   margin-bottom: 9px;
 }
 
+.footer-connect {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-connect-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icon {
+  fill: #ffffff;
+}
+
+.footer-connect-link:hover {
+  background-color: var(--link-txt-cl);
+}
+
+.footer-connect-link:hover .footer-icon {
+  fill: #ffffff;
+}
+
+/**
+|===============================
+|Social list
+|===============================
+*/
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.socials-icon {
+  fill: #afb1b8;
+}
+
+.socials-link:hover {
+  background-color: var(--link-txt-cl);
+}
+
+.socials-link:hover .socials-icon {
+  fill: #ffffff;
+}
 /**
 |===============================
 |Portfolio list
