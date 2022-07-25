@@ -105,6 +105,7 @@ img {
 .header-list-nav {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 }
 
 .header-item {
@@ -137,9 +138,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .contacts-nav .link {
   font-weight: 500;
@@ -188,7 +188,6 @@ img {
 }
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -402,14 +401,16 @@ img {
 
 .clients-link:hover,
 .clients-link:focus {
-  background-color: var(--link-txt-cl);
+  border-color: var(--link-txt-cl);
 }
 
-.clients-link:hover,
 .clients-link:focus .clients-icon {
-  fill: #ffffff;
+  fill: var(--link-txt-cl);
 }
 
+.clients-link:hover .clients-icon {
+  fill: var(--link-txt-cl);
+}
 /**
 |===============================
 |Footer
@@ -424,7 +425,10 @@ img {
 .footer-section {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  /*gap: 70px;*/
+}
+.footer-contacts {
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -525,11 +529,13 @@ img {
   border-radius: 50%;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--link-txt-cl);
 }
 
-.socials-link:hover .socials-icon {
+.socials-link:hover,
+.socials-link:focus .socials-icon {
   fill: #ffffff;
 }
 .socials-icon {
@@ -553,7 +559,6 @@ img {
   gap: 8px;
   justify-content: center;
   margin-top: 0;
-
   margin-bottom: 50px;
 }
 
@@ -581,6 +586,11 @@ img {
   cursor: pointer;
   background-color: #f5f4fa;
   border-radius: 4px;
+
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .btn-project-current {
   color: #ffffff;
